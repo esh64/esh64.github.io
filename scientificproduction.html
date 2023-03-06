@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title id="title">Scientific Productions/title>
+</head>
+
+<body>
+    <h1>Journals Articles</h1>
+    
+    <p>Instance-based novelty detection in passive sonar signals<br>Victor Hugo Da Silva Muniz
+, João Baptista De Oliveira e Souza Filho
+ and Eduardo Sperle Honorato<br>International Journal of Innovative Computing and ApplicationsVol. 13, No. 3 2022<br>https://doi.org/10.1504/IJICA.2022.124238</p>
+        
+    
+    <h2 id="AboutMe" onclick="MoveToPage('AboutMe')">About me</h2>
+    <h2 id="FormalEducation" onclick="MoveToPage('FormalEducation')">Formal Education</h2>
+    <h2 id="ProfessionalExperience" onclick="MoveToPage('ProfessionalExperience')">Professional Experience</h2>
+    <h2 id="HomePage" onclick="MoveToPage('HomePage')">Home Page</h2>
+</body>
+<script>    
+    function MoveToPage(newPage)
+    {
+        if (newPage=='HomePage')
+        {
+            location.replace("https://esh64.github.io/index.html");
+        }
+        else
+        {
+            let newAddress="https://esh64.github.io/"+newPage.toLowerCase()+".html";
+            location.replace(newAddress);
+        }
+    }
+</script>
+</html>
