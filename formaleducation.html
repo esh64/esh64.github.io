@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html>
 
+<style>
+body {
+  background-color: #e5e5e5;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+}
+
+a {
+  font-family: "Times New Roman", Times, serif;
+  color: #dd2020;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+  font-size: 16px;
+}
+
+li {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+  font-size: 16px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #a5a2a2;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #dd2020;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+/*   font-size: 28px; /* Increased text to enable scrolling */ */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+</style>
+
 <head>
   <title id="title">Formal Education</title>
 </head>
 
 <body>
+
+    <div class="main">
+
     <h1>Degrees</h1>
     <h2>2017-2022 Graduation in Bachelor of Electronic and Computer Engineering</h2>
         <ul>
@@ -30,9 +102,15 @@
     <h1>Awards</h1>
     <h2>Honorable Mention at the 11th UFRJ Academic Integration Week, Federal University of Rio de Janeiro</h2>
     
-    <h2><a href="https://esh64.github.io/aboutme.html">About me</a></h2>
-    <h2><a href="https://esh64.github.io/professionalexperience.html">Professional Experience</a></h2>
-    <h2><a href="https://esh64.github.io/scientificproduction.html">Scientific Productions</a></h2>
-    <h2><a href="https://esh64.github.io/index.html">Home Page</a></h2>
+    </div>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="https://esh64.github.io/index.html">Home Page</a>
+        <a href="https://esh64.github.io/aboutme.html">About Me</a>
+        <a href="https://esh64.github.io/formaleducation.html">Formal Education</a>
+        <a href="https://esh64.github.io/professionalexperience.html">Professional Experience</a>
+        <a href="https://esh64.github.io/scientificproduction.html">Scientific Productions</a>
+    </div>
+    
 </body>
 </html>

@@ -1,16 +1,88 @@
 <!DOCTYPE html>
 <html>
 
+<style>
+body {
+  background-color: #e5e5e5;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+}
+
+a {
+  font-family: "Times New Roman", Times, serif;
+  color: #dd2020;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+  font-size: 16px;
+}
+
+li {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+  font-size: 16px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #a5a2a2;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #dd2020;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+/*   font-size: 28px; /* Increased text to enable scrolling */ */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+</style>
+
 <head>
   <title id="title">About me</title>
 </head>
 
 <body>
+    
+    <div class="main">
+    
     <h1>Eduardo Sperle Honorato</h1>
     
     <p>Born in Rio de Janeiro, Brazil. Passionate about computers and video games since childhood, he showed a lot of interest in math and science since elementary school. He started learning to program at age 13 with python and deepened in Computing and Informatics during high school at CEFET from 2012 to 2014.</p>
     
-    <p>Not knowing what to study, in 2015 he enrolled in the undergraduate course BCMT (Bachelor of Mathematics and Earth Sciences) at UFRJ where he studied basic subjects in mathematics, geology, astronomy and chemistry where he had the opportunity to talk to several professors to learn more about the different undergraduate courses.</p>
+    <p>Not knowing what to study, in 2015 he enrolled in the BCMT (Bachelor of Mathematics and Earth Sciences) undergraduate course  at UFRJ where he studied basic subjects in mathematics, geology, astronomy and chemistry, and had the opportunity to talk to several professors to learn more about the different areas.</p>
     
     <p>In 2017, he enrolled in the Electronic and Computer Engineering undergraduate course, due to his hobby in retro gaming and his passion for computers. Since then he has carried out research in the areas of Machine Learning, Digital Signal Processing and Computer Vision, producing 4 conference papers and a journal article.</p>
     
@@ -37,12 +109,18 @@
             <li>Retro Gaming and Video Games Collection</li>
             <li>Computers</li>
             <li>Mathematics and Natural Sciences</li>
-            <li>Gunpla</li>
+            <li>Gundam and Real Robot Enthusiast</li>
         </ul>
     
-    <h2><a href="https://esh64.github.io/formaleducation.html">Formal Education</a></h2>
-    <h2><a href="https://esh64.github.io/professionalexperience.html">Professional Experience</a></h2>
-    <h2><a href="https://esh64.github.io/scientificproduction.html">Scientific Productions</a></h2>
-    <h2><a href="https://esh64.github.io/index.html">Home Page</a></h2>
+    </div>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="https://esh64.github.io/index.html">Home Page</a>
+        <a href="https://esh64.github.io/aboutme.html">About Me</a>
+        <a href="https://esh64.github.io/formaleducation.html">Formal Education</a>
+        <a href="https://esh64.github.io/professionalexperience.html">Professional Experience</a>
+        <a href="https://esh64.github.io/scientificproduction.html">Scientific Productions</a>
+    </div>
+    
 </body>
 </html>
