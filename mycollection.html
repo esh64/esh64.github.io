@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+body {
+  background-color: #e5e5e5;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+}
+
+.h1_2 {
+  font-family: "Times New Roman", Times, serif;
+  color: #e5e5e5;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+}
+
+a {
+  font-family: "Times New Roman", Times, serif;
+  color: #dd2020;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+  font-size: 16px;
+}
+
+li {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+  font-size: 16px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #a5a2a2;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #dd2020;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.image-cropper {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.image-cropper2 {
+  width: 125px;
+  height: 125px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+img {
+  display: inline;
+  margin: 8px -8px;
+  height: 115%;
+  width: auto;
+}
+
+.img2 {
+  display: inline;
+  margin: 0px -45px;
+  height: 100%;
+  width: auto;
+}
+
+#sidenav-image {
+  max-width: 100%;
+}
+
+</style>
+
+<head>
+  <title id="title">My Collection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="main">
+  
+    <h1>Some of my favorites items</h1>
+    <img src="IMG_20250306_141452.jpg" alt="Japanese Mega Drive" style="width: 100%; height: auto;"/>
+    <p>Mega Drive first model with the ®</p>
+    <br>
+    <img src="IMG_20250306_141618.jpg" alt="Brazilian Saturn" style="width: 100%; height: auto;"/>
+    <img src="IMG_20250306_141640.jpg" alt="Brazilian Saturn" style="width: 100%; height: auto;"/>
+    <p>Brazilian Saturn </p>
+    <br>
+    <img src="IMG_20250306_141912.jpg" alt="Original Xbox" style="width: 100%; height: auto;"/>
+    <p>Original Xbox from my childhood, still kicking</p>
+    <br>
+    <img src="IMG_20250306_141351.jpg" alt="Rune Factory Collection" style="width: 100%; height: auto;"/>
+    <img src="IMG_20250306_141114.jpg" alt="Rune Factory Collection" style="width: 100%; height: auto;"/>
+    <p>Rune Factory Collection</p>
+    <br>
+    <img src="IMG_20250306_140804.jpg" alt="Path of Radiance" style="width: 100%; height: auto;"/>
+    <p>Probably the most valuable game in my collection</p>
+    <br>
+    <img src="IMG_20250306_140651" alt="GunValkyrie" style="width: 100%; height: auto;"/>
+    <br>
+    <h1>My Collection no so well displayed.</h1>
+    <img src="IMG_20250306_140948.jpg" style="width: 100%; height: auto;"/>
+    <img src="IMG_20250306_141000.jpg" style="width: 100%; height: auto;"/>
+    <img src="IMG_20250306_141023.jpg" style="width: 100%; height: auto;"/>
+    <img src="IMG_20250306_141219.jpg" style="width: 100%; height: auto;"/>
+    <img src="IMG_20250306_141224.jpg" style="width: 100%; height: auto;"/>
+    <img src="IMG_20250306_141241.jpg" style="width: 100%; height: auto;"/>
+  
+    
+    </div>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="https://esh64.github.io/index.html">Home Page</a>
+        <a href="https://esh64.github.io/aboutme.html">About Me</a>
+        <a href="https://esh64.github.io/formaleducation.html">Formal Education</a>
+        <a href="https://esh64.github.io/professionalexperience.html">Professional Experience</a>
+        <a href="https://esh64.github.io/scientificproduction.html">Scientific Productions</a>
+        <a href="https://esh64.github.io/mycollection.html">My Collection</a>
+        <img id="sidenav-image" src="deathscythe.png" alt="God of Death" style="width: 100%; height: auto;"/>
+    </div>
+    
+</body>
+</html>
