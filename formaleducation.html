@@ -11,11 +11,6 @@ h1 {
   color: #0d0c0c;
 }
 
-.h1_2 {
-  font-family: "Times New Roman", Times, serif;
-  color: #e5e5e5;
-}
-
 h2 {
   font-family: "Times New Roman", Times, serif;
   color: #0d0c0c;
@@ -26,16 +21,19 @@ a {
   color: #dd2020;
 }
 
-p {
+p, li {
   font-family: "Times New Roman", Times, serif;
   color: #0d0c0c;
   font-size: 16px;
 }
 
-li {
-  font-family: "Times New Roman", Times, serif;
-  color: #0d0c0c;
-  font-size: 16px;
+/* Seções */
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .sidenav {
@@ -72,40 +70,9 @@ li {
   .sidenav a {font-size: 18px;}
 }
 
-.image-cropper {
-  width: 250px;
-  height: 250px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.image-cropper2 {
-  width: 125px;
-  height: 125px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-img {
-  display: inline;
-  margin: 8px -8px;
-  height: 115%;
-  width: auto;
-}
-
-.img2 {
-  display: inline;
-  margin: 0px -45px;
-  height: 100%;
-  width: auto;
-}
-
 #sidenav-image {
   max-width: 100%;
 }
-
 </style>
 
 <head>
@@ -115,85 +82,93 @@ img {
 
 <body>
 
-    <div class="main">
+<div class="main">
 
-<h1>Postgraduate</h1>
+    <section id="postgraduate">
+        <h1>Postgraduate</h1>
 
-<h2>2023-2029 Ph.D. in Computer Science (in progress)</h2>
-<ul>
-    <li>University of São Paulo (USP), Brazil</li>
-    <li>Advisor: Vanderlei Bonato</li>
-    <li>Funding: Coordination for the Improvement of Higher Education Personnel (CAPES), Brazil</li>
-</ul>
-
-<h2>2023-2025 Master's in Computer Science</h2>
-<ul>
-    <li>University of São Paulo (USP), Brazil</li>
-    <li>Advisor: Denis Fernando Wolf</li>
-    <li>Funding: Coordination for the Improvement of Higher Education Personnel (CAPES), Brazil</li>
-    <li>GPA: 3.96/4</li>
-    <li>Research Areas:
+        <h2>2023-2029 Ph.D. in Computer Science (in progress)</h2>
         <ul>
-            <li>Deep Learning</li>
-            <li>Computer Vision</li>
-            <li>Robotics</li>
+            <li>University of São Paulo (USP), Brazil</li>
+            <li>Advisor: Vanderlei Bonato</li>
+            <li>Funding: Coordination for the Improvement of Higher Education Personnel (CAPES), Brazil</li>
         </ul>
-    </li>
-</ul>
 
-<h1>Undergraduate</h1>
-
-<h2>2017–2023 Bachelor's in Electronic and Computer Engineering</h2>
-<ul>
-    <li>Federal University of Rio de Janeiro (UFRJ), Brazil</li>
-    <li>Advisor: João Baptista de Oliveira e Souza Filho</li>
-    <li>Grantee: National Council for Scientific and Technological Development (CNPq), Brazil</li>
-    <li>GPA: 8.5/10</li>
-    <li>Research Areas:
+        <h2>2023-2025 Master's in Computer Science</h2>
         <ul>
-            <li>Machine Learning</li>
-            <li>Digital Signal Processing</li>
+            <li>University of São Paulo (USP), Brazil</li>
+            <li>Advisor: Denis Fernando Wolf</li>
+            <li>Funding: Coordination for the Improvement of Higher Education Personnel (CAPES), Brazil</li>
+            <li>GPA: 3.96/4</li>
+            <li>Research Areas:
+                <ul>
+                    <li>Deep Learning</li>
+                    <li>Computer Vision</li>
+                    <li>Robotics</li>
+                </ul>
+            </li>
         </ul>
-    </li>
-</ul>
+    </section>
 
-<h2>2024-2024 Bachelor's in Applied Mathematics and Scientific Computing (incomplete)</h2>
-<ul>
-    <li>University of São Paulo (USP), Brazil</li>
-</ul>
+    <section id="undergraduate">
+        <h1>Undergraduate</h1>
 
-<h2>2015–2016 Bachelor's in Mathematics and Earth Sciences (incomplete)</h2>
-<ul>
-    <li>Federal University of Rio de Janeiro (UFRJ), Brazil</li>
-    <li>Transferred to the Electronic and Computer Engineering undergraduate program</li>
-</ul>
-
-<h1>High School</h1>
-
-<h2>2012–2014 Technical Course in Informatics</h2>
-<ul>
-    <li>Federal Center for Technological Education Celso Suckow da Fonseca (CEFET/RJ), Brazil</li>
-    <li>Advisor: Eduardo Soares Ogasawara</li>
-    <li>Grantee: National Council for Scientific and Technological Development (CNPq), Brazil</li>
-    <li>Research Area:
+        <h2>2024-2024 Bachelor's in Applied Mathematics and Scientific Computing (incomplete)</h2>
         <ul>
-            <li>Educational Informatics</li>
+            <li>University of São Paulo (USP), Brazil</li>
         </ul>
-    </li>
-</ul>
+      
+        <h2>2017–2023 Bachelor's in Electronic and Computer Engineering</h2>
+        <ul>
+            <li>Federal University of Rio de Janeiro (UFRJ), Brazil</li>
+            <li>Advisor: João Baptista de Oliveira e Souza Filho</li>
+            <li>Grantee: National Council for Scientific and Technological Development (CNPq), Brazil</li>
+            <li>GPA: 8.5/10</li>
+            <li>Research Areas:
+                <ul>
+                    <li>Machine Learning</li>
+                    <li>Digital Signal Processing</li>
+                </ul>
+            </li>
+        </ul>
 
-<h2>2012–2014 Secondary Education</h2>
-<ul>
-    <li>Federal Center for Technological Education Celso Suckow da Fonseca (CEFET/RJ), Brazil</li>
-</ul>
+        <h2>2015–2016 Bachelor's in Mathematics and Earth Sciences (incomplete)</h2>
+        <ul>
+            <li>Federal University of Rio de Janeiro (UFRJ), Brazil</li>
+            <li>Transferred to the Electronic and Computer Engineering undergraduate program</li>
+        </ul>
+    </section>
 
-<h1>Awards</h1>
-<ul>
-    <li>2022 Honorable Mention at the 11th UFRJ Academic Integration Week, Federal University of Rio de Janeiro</li>
-</ul>
-   
-    </div>
-    
+<section id="highschool">
+    <h1>Secondary Education</h1>
+
+    <h2>2012–2014 Technical High School Diploma in Informatics</h2>
+    <ul>
+        <li>Federal Center for Technological Education Celso Suckow da Fonseca (CEFET/RJ), Brazil</li>
+        <li>Advisor: Eduardo Soares Ogasawara</li>
+        <li>Grantee: National Council for Scientific and Technological Development (CNPq), Brazil</li>
+        <li>Research Area:
+            <ul>
+                <li>Educational Informatics</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>2012–2014 Secondary Education Diploma</h2>
+    <ul>
+        <li>Federal Center for Technological Education Celso Suckow da Fonseca (CEFET/RJ), Brazil</li>
+    </ul>
+</section>
+
+    <section id="awards">
+        <h1>Awards</h1>
+        <ul>
+            <li>2022 Honorable Mention at the 11th UFRJ Academic Integration Week, Federal University of Rio de Janeiro</li>
+        </ul>
+    </section>
+
+</div>
+
 <div id="mySidenav" class="sidenav">
   <a href="https://esh64.github.io/index.html">Home Page</a>
   <a href="https://esh64.github.io/aboutme.html">About Me</a>
@@ -203,6 +178,6 @@ img {
   <a href="https://esh64.github.io/mycollection.html">My Collection</a>
   <img id="sidenav-image" src="deathscythe.png" alt="God of Death" style="width: 100%; height: auto;"/>
 </div>
-   
+
 </body>
 </html>
