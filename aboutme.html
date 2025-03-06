@@ -9,11 +9,15 @@ body {
 h1 {
   font-family: "Times New Roman", Times, serif;
   color: #0d0c0c;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
 h2 {
   font-family: "Times New Roman", Times, serif;
   color: #0d0c0c;
+  font-size: 22px;
 }
 
 p {
@@ -53,50 +57,46 @@ li {
 }
 
 .main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  padding: 20px 10px;
-}
-
-.image-cropper {
-  width: 250px;
-  height: 250px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-  float: right;
-  margin-left: 20px;
-}
-
-.img2 {
-  display: inline;
-  margin: 0px -45px;
-  height: 100%;
-  width: auto;
-}
-
-#sidenav-image {
-  max-width: 100%;
+  margin-left: 180px; /* Ajustado para evitar sobreposição */
+  padding: 20px;
+  max-width: 80%;
 }
 
 .bio-section {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .bio-text {
   flex: 1;
-  margin-right: 20px;
-  max-width: 60%;
+  max-width: 65%;
 }
 
-.bio-photo {
-  flex: 0;
+.bio-photo img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 section {
   margin-bottom: 40px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+  border: 1px solid #ccc;
+  margin: 20px 0;
 }
 
 ul {
@@ -116,6 +116,7 @@ ul ul {
 
 <body>
 <div class="main">
+
     <section class="bio-section">
         <div class="bio-text">
             <h1>Eduardo Sperle Honorato</h1>
@@ -123,15 +124,15 @@ ul ul {
 
             <p>Uncertain about which career path to follow, in 2015, I enrolled in the BCMT (Bachelor of Mathematics and Earth Sciences) program at UFRJ. There, I studied fundamental subjects such as mathematics, geology, astronomy, and chemistry. This experience provided me with invaluable opportunities to engage in insightful discussions with professors from various fields, broadening my academic perspective.</p>
 
-            <p>In 2017, driven by my enthusiasm for retro gaming and my deep passion for computers, I embarked on a new academic journey in the Electronic and Computer Engineering program. Since then, my research has spanned Machine Learning, Digital Signal Processing, and Computer Vision. I have been involved in two major research projects: the first focused on novelty detection in passive sonar systems using machine learning, and the second on developing intelligent vision-based methods and embedded systems to monitor tree growth near power lines in remote areas. This work has led to the publication of four conference papers and a journal article, reflecting my dedication to advancing these fields.</p>
-
-            <p>In 2023, I began my master's degree in Computer Science and Computational Mathematics at ICMC-USP, earning my degree in 2025. My research focused on sensor fusion for autonomous vehicles, aiming to improve the computational efficiency of a state-of-the-art model. By simplifying the image-processing backbone and leveraging attention mechanisms, the goal was to achieve comparable performance to the original model while significantly reducing computational resource requirements.</p>
+            <p>In 2017, driven by my enthusiasm for retro gaming and my deep passion for computers, I embarked on a new academic journey in the Electronic and Computer Engineering program. Since then, my research has spanned Machine Learning, Digital Signal Processing, and Computer Vision.</p>
         </div>
 	    
         <div class="bio-photo">
-        	<img src="oie_LSXfiov0tPPj.jpg"/>
+        	<img src="oie_LSXfiov0tPPj.jpg" alt="Eduardo Honorato's Photo"/>
         </div>
     </section>
+
+    <hr> <!-- Separador entre as seções -->
 
     <section>
         <h1>Research Interests</h1>
@@ -188,6 +189,8 @@ ul ul {
         </ul>
     </section>
 
+    <hr> <!-- Separador entre as seções -->
+
     <section>
         <h1>Hobbies</h1>
         <ul>
@@ -214,5 +217,5 @@ ul ul {
   <img id="sidenav-image" src="deathscythe.png" alt="God of Death" style="width: 100%; height: auto;"/>
 </div>
    
-    </body>
+</body>
 </html>
