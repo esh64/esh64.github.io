@@ -1,189 +1,208 @@
 <!DOCTYPE html>
 <html>
 
+<style>
+body {
+  background-color: #e5e5e5;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+}
+
+.h1_2 {
+  font-family: "Times New Roman", Times, serif;
+  color: #e5e5e5;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+}
+
+a {
+  font-family: "Times New Roman", Times, serif;
+  color: #dd2020;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+  font-size: 16px;
+}
+
+li {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+  font-size: 16px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #a5a2a2;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #dd2020;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.image-cropper {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.image-cropper2 {
+  width: 125px;
+  height: 125px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+img {
+  display: inline;
+  margin: 8px -8px;
+  height: 115%;
+  width: auto;
+}
+
+.img2 {
+  display: inline;
+  margin: 0px -45px;
+  height: 100%;
+  width: auto;
+}
+
+#sidenav-image {
+  max-width: 100%;
+}
+
+</style>
+
 <head>
-    <style>
-        /* Estilos gerais */
-        body {
-            background-color: #e5e5e5;
-            font-family: "Times New Roman", Times, serif;
-            color: #0d0c0c;
-        }
-
-        h1 {
-            font-size: 24px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            font-size: 20px;
-            margin-top: 30px;
-            border-bottom: 2px solid #dd2020;
-            padding-bottom: 5px;
-        }
-
-        a {
-            color: #dd2020;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        p {
-            font-size: 16px;
-        }
-
-        li {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        /* Barra lateral */
-        .sidenav {
-            height: 100%;
-            width: 160px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: #a5a2a2;
-            padding-top: 20px;
-        }
-
-        .sidenav a {
-            padding: 6px 8px;
-            font-size: 18px;
-            display: block;
-            color: #dd2020;
-        }
-
-        .sidenav a:hover {
-            color: #ffffff;
-        }
-
-        /* Conteúdo principal */
-        .main {
-            margin-left: 180px;
-            padding: 20px;
-            max-width: 80%;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Seções */
-        section {
-            margin-bottom: 40px;
-            padding: 20px;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        /* Imagem da barra lateral */
-        #sidenav-image {
-            max-width: 100%;
-            margin-top: 20px;
-        }
-    </style>
+  <title id="title">Formal Education</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
     <div class="main">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Journals Articles -->
-        <section>
-            <h1>Journals Articles</h1>
-            <ul>
-                <li>
-                    <p><a href="https://doi.org/10.1016/j.jvoice.2025.01.021">
-                            Application of Wavelet Analysis and Paraconsistent Feature Extraction in the Classification of Voice Pathologies</a><br>
-                        Gabriel José Pellisser Dalalana, Rodrigo Capobianco Guido, Eduardo Sperle Honorato, Ivan Nunes da Silva<br>
-                        <i>Journal of Voice, 2025</i>
-                    </p>
-                </li>
-                <li>
-                    <p><a href="https://www.inderscienceonline.com/doi/abs/10.1504/IJICA.2022.124238">
-                            Instance-based novelty detection in passive sonar signals</a><br>
-                        Victor Hugo Da Silva Muniz, João Baptista De Oliveira e Souza Filho and Eduardo Sperle Honorato<br>
-                        <i>International Journal of Innovative Computing and Applications, Vol. 13, No. 3, 2022</i>
-                    </p>
-                </li>
-            </ul>
-        </section>
+<h1>Postgraduate</h1>
 
-        <!-- Conferences Articles -->
-        <section>
-            <h1>Conference Articles</h1>
-            <ul>
-                <li>
-                    <p><a href="https://ieeexplore.ieee.org/document/10786434">
-                            Enhancing 3D Object Detection in Autonomous Vehicles: Multi-Sensor Fusion with Attention Mechanisms</a><br>
-                        Eduardo Sperle Honorato, Denis Fernando Wolf<br>
-                        <i>2024 IEEE Latin American Robotics Symposium (LARS)</i>
-                    </p>
-                </li>
-                <li>
-                    <p><a href="https://ieeexplore.ieee.org/document/10786436">
-                            Out-of-Distribution Object Detection in Autonomous Vehicles With Yolo Model</a><br>
-                        Eduardo Sperle Honorato, Mariana Aya Suzuki Uchida, Thiago Henrique Segreto Silva, Denis Fernando Wolf<br>
-                        <i>2024 IEEE Latin American Robotics Symposium (LARS)</i>
-                    </p>
-                </li>
-                <li>
-                    <p><a href="https://ieeexplore.ieee.org/document/9981040">
-                            Clustering-and-Bagging-based Ensemble for Novelty Detection in Passive Sonar Systems</a><br>
-                        Eduardo Sperle Honorato, João Baptista de Oliveira e Souza Filho, Victor Hugo Da Silva Muniz<br>
-                        <i>2022 IEEE Latin American Conference on Computational Intelligence (LA-CCI)</i>
-                    </p>
-                </li>
-                <li>
-                    <p><a href="https://ieeexplore.ieee.org/document/9769821">
-                            A Hierarchical Ensemble of LSTM-based Autoencoders for Novelty Detection in Passive Sonar Systems</a><br>
-                        Eduardo Sperle Honorato, João Baptista de Oliveira e Souza Filho, Victor Hugo Da Silva Muniz<br>
-                        <i>2021 IEEE Latin American Conference on Computational Intelligence (LA-CCI)</i>
-                    </p>
-                </li>
-            </ul>
-        </section>
+<h2>2023-2029 Ph.D. in Computer Science (in progress)</h2>
+<ul>
+    <li>University of São Paulo (USP), Brazil</li>
+    <li>Advisor: Vanderlei Bonato</li>
+    <li>Funding: Coordination for the Improvement of Higher Education Personnel (CAPES), Brazil</li>
+</ul>
 
-        <!-- Others Publications -->
-        <section>
-            <h1>Others Publications</h1>
-            <ul>
-                <li>
-                    <p><a href="https://monografias.poli.ufrj.br/rep-download.php?farquivo=projpoli10039302.pdf&fcodigo=5935">
-                            Automatic Detection of Unknown Classes of Vessels using Specialized Machine Learning Models in Passive Sonar Systems</a><br>
-                        Eduardo Sperle Honorato<br>
-                        <i>2022</i><br>
-                        <a href="TCC.pdf">Read Here!</a>
-                    </p>
-                </li>
-            </ul>
-        </section>
+<h2>2023-2025 Master's in Computer Science</h2>
+<ul>
+    <li>University of São Paulo (USP), Brazil</li>
+    <li>Advisor: Denis Fernando Wolf</li>
+    <li>Funding: Coordination for the Improvement of Higher Education Personnel (CAPES), Brazil</li>
+    <li>GPA: 3.96/4</li>
+    <li>Research Areas:
+        <ul>
+            <li>Deep Learning</li>
+            <li>Computer Vision</li>
+            <li>Robotics</li>
+        </ul>
+    </li>
+</ul>
 
+<h1>Undergraduate</h1>
+
+<h2>2017–2023 Bachelor's in Electronic and Computer Engineering</h2>
+<ul>
+    <li>Federal University of Rio de Janeiro (UFRJ), Brazil</li>
+    <li>Advisor: João Baptista de Oliveira e Souza Filho</li>
+    <li>Grantee: National Council for Scientific and Technological Development (CNPq), Brazil</li>
+    <li>GPA: 8.5/10</li>
+    <li>Research Areas:
+        <ul>
+            <li>Machine Learning</li>
+            <li>Digital Signal Processing</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>2024-2024 Bachelor's in Applied Mathematics and Scientific Computing (incomplete)</h2>
+<ul>
+    <li>University of São Paulo (USP), Brazil</li>
+</ul>
+
+<h2>2015–2016 Bachelor's in Mathematics and Earth Sciences (incomplete)</h2>
+<ul>
+    <li>Federal University of Rio de Janeiro (UFRJ), Brazil</li>
+    <li>Transferred to the Electronic and Computer Engineering undergraduate program</li>
+</ul>
+
+<h1>High School</h1>
+
+<h2>2012–2014 Technical Course in Informatics</h2>
+<ul>
+    <li>Federal Center for Technological Education Celso Suckow da Fonseca (CEFET/RJ), Brazil</li>
+    <li>Advisor: Eduardo Soares Ogasawara</li>
+    <li>Grantee: National Council for Scientific and Technological Development (CNPq), Brazil</li>
+    <li>Research Area:
+        <ul>
+            <li>Educational Informatics</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>2012–2014 Secondary Education</h2>
+<ul>
+    <li>Federal Center for Technological Education Celso Suckow da Fonseca (CEFET/RJ), Brazil</li>
+</ul>
+
+<h1>Awards</h1>
+<ul>
+    <li>2022 Honorable Mention at the 11th UFRJ Academic Integration Week, Federal University of Rio de Janeiro</li>
+</ul>
+   
     </div>
-
-    <!-- Barra lateral -->
-    <div class="sidenav">
-        <a href="https://esh64.github.io/index.html">Home Page</a>
-        <a href="https://esh64.github.io/aboutme.html">About Me</a>
-        <a href="https://esh64.github.io/formaleducation.html">Formal Education</a>
-        <a href="https://esh64.github.io/professionalexperience.html">Professional Experience</a>
-        <a href="https://esh64.github.io/scientificproduction.html">Scientific Productions</a>
-        <a href="https://esh64.github.io/mycollection.html">My Collection</a>
-        <img id="sidenav-image" src="deathscythe.png" alt="God of Death" />
-    </div>
-
+    
+<div id="mySidenav" class="sidenav">
+  <a href="https://esh64.github.io/index.html">Home Page</a>
+  <a href="https://esh64.github.io/aboutme.html">About Me</a>
+  <a href="https://esh64.github.io/formaleducation.html">Formal Education</a>
+  <a href="https://esh64.github.io/professionalexperience.html">Professional Experience</a>
+  <a href="https://esh64.github.io/scientificproduction.html">Scientific Productions</a>
+  <a href="https://esh64.github.io/mycollection.html">My Collection</a>
+  <img id="sidenav-image" src="deathscythe.png" alt="God of Death" style="width: 100%; height: auto;"/>
+</div>
+   
 </body>
-
 </html>
