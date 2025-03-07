@@ -1,174 +1,175 @@
 <!DOCTYPE html>
 <html>
 
-<style>
-body {
-  background-color: #e5e5e5;
-}
-
-h1 {
-  font-family: "Times New Roman", Times, serif;
-  color: #0d0c0c;
-}
-
-.h1_2 {
-  font-family: "Times New Roman", Times, serif;
-  color: #e5e5e5;
-}
-
-h2 {
-  font-family: "Times New Roman", Times, serif;
-  color: #0d0c0c;
-}
-
-a {
-  font-family: "Times New Roman", Times, serif;
-  color: #dd2020;
-}
-
-p {
-  font-family: "Times New Roman", Times, serif;
-  color: #0d0c0c;
-  font-size: 16px;
-}
-
-p2 {
-  font-family: "Gothic"; 
-  font-style: italic;
-  color: #dd2020; 
-  text-align: center; 
-}
-
-li {
-  font-family: "Times New Roman", Times, serif;
-  color: #0d0c0c;
-  font-size: 16px;
-}
-
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #a5a2a2;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #dd2020;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #ffffff;
-}
-
-.main {
-  margin-left: 160px;
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-.image-cropper {
-  width: 250px;
-  height: 250px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.image-cropper2 {
-  width: 125px;
-  height: 125px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-img {
-  display: inline;
-  margin: 8px -8px;
-  height: 115%;
-  width: auto;
-}
-
-.img2 {
-  display: inline;
-  margin: 0px -45px;
-  height: 100%;
-  width: auto;
-}
-
-#sidenav-image {
-  max-width: 100%;
-}
-
-.image-container {
-  text-align: center;
-}
-
-</style>
-
 <head>
-  <title id="title">Eduardo Sperle Honorato's home page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Sperle Honorato's Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #e5e5e5;
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            margin-left: 180px;
+            padding: 20px;
+            max-width: 900px;
+        }
+
+        h1 {
+            color: #0d0c0c;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #0d0c0c;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #0d0c0c;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #dd2020;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        a:hover {
+            color: #a50000;
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin: 30px 0;
+        }
+
+        /* Sidebar */
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #a5a2a2;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            display: block;
+            padding: 10px 16px;
+            font-size: 18px;
+            color: #dd2020;
+        }
+
+        .sidenav a:hover {
+            color: #ffffff;
+            background-color: #8a8989;
+        }
+
+        /* Image container */
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .image-caption {
+            font-family: "Gothic", sans-serif;
+            font-style: italic;
+            color: #dd2020;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        /* External links section */
+        .external-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .external-links a {
+            background-color: #dd2020;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-align: center;
+            transition: background 0.3s;
+        }
+
+        .external-links a:hover {
+            background-color: #a50000;
+        }
+
+    </style>
 </head>
 
 <body>
 
+<div class="sidenav">
+    <a href="https://esh64.github.io/index.html">Home Page</a>
+    <a href="https://esh64.github.io/aboutme.html">About Me</a>
+    <a href="https://esh64.github.io/formaleducation.html">Formal Education</a>
+    <a href="https://esh64.github.io/professionalexperience.html">Professional Experience</a>
+    <a href="https://esh64.github.io/scientificproduction.html">Scientific Productions</a>
+    <a href="https://esh64.github.io/mycollection.html">My Collection</a>
+</div>
+
 <div class="main">
     <h1>Welcome to My Page!</h1>
-    <p>I am Eduardo Sperle Honorato, an Electronic and Computer Engineer and a Master's graduate in Computer Science, currently pursuing a Ph.D. in Computer Science. My research focuses on Dataflow Architecture for general-purpose computing. My research interests align with my passion for computers and video games, as well as my long-standing fascination with mathematics, which I have cultivated since childhood.</p>
+    <p>Hello, friend. My name is Eduardo Sperle Honorato. I am an Electronics and Computer Engineer, a Master in Computer Science, and currently pursuing a Ph.D. in the same field. My doctoral research focuses on developing a general-purpose DataFlow-based computer architecture. My academic journey aligns with my lifelong passion for computers and video games, which I have nurtured since childhood.</p>
 
-    <p>I am particularly interested in research areas such as Machine Learning, Computer Vision, Computer Architecture, and Digital Signal Processing, with applications in Robotics, Biomedical Engineering, Cybersecurity, and Electronic Warfare.</p>
+    <p>I am an avid gamer, both digital and analog, with a special love for retro games—which I also collect.</p>
 
-    <p>My experience extends to programming and software development, primarily in Python, JavaScript, and C. I also have proficiency in electronic circuit design. I leverage my skills to develop graphical applications, embedded systems, and Data Science solutions.</p>
+    <p>My research interests include Machine Learning, Computer Vision, Computer Architecture, and Digital Signal Processing, with applications in Robotics, Biomedical Engineering, Cybersecurity, and Electronic Warfare.</p>
 
-    <p>Feel free to explore my academic background, published works, and professional experiences on this page.</p>
-  
-    <h2>External pages that may be of interest</h2>
-    <a href="https://scholar.google.com/citations?user=qMTp6FEAAAAJ&hl=en">Google Scholar</a> 
-    <a href="http://lattes.cnpq.br/7843894232687278">Lattes</a>
-    <a href="https://orcid.org/0000-0002-7727-1445">ORCID</a>
-    <a href="https://www.researchgate.net/profile/Eduardo-Honorato-4">Research Gate</a>
-    <a href="https://github.com/esh64">GitHub</a>
-    <a href="https://steamcommunity.com/id/lordekfc/">Steam</a>
-    <a href="https://www.instagram.com/esh_64_/">Instagram</a>
-    
+    <p>Beyond research, I have extensive experience in programming and software development, primarily in Python, JavaScript, and C. I am also proficient in electronic circuit design, leveraging my skills to develop graphical applications, embedded systems, and Data Science solutions.</p>
+
+    <p>Feel free to explore my academic background, published works, and professional experiences on this page. And if you're a retro gaming enthusiast, don't miss the chance to check out part of my collection!</p>
+
+    <hr>
+
+    <h2>External Pages That May Be of Interest</h2>
+    <div class="external-links">
+        <a href="https://scholar.google.com/citations?user=qMTp6FEAAAAJ&hl=en">Google Scholar</a> 
+        <a href="http://lattes.cnpq.br/7843894232687278">Lattes</a>
+        <a href="https://orcid.org/0000-0002-7727-1445">ORCID</a>
+        <a href="https://www.researchgate.net/profile/Eduardo-Honorato-4">ResearchGate</a>
+        <a href="https://github.com/esh64">GitHub</a>
+        <a href="https://steamcommunity.com/id/lordekfc/">Steam</a>
+        <a href="https://www.instagram.com/esh_64_/">Instagram</a>
     </div>
-  
+
+    <hr>
+
     <div class="image-container">
-        <img id="randomImage" alt="Doomed Electronics" style="max-width: 25%; height: auto;">
-        <br>
-        <p2>The electronic satanic system</p2>
+        <img id="randomImage" alt="Doomed Electronics">
+        <p class="image-caption">The electronic satanic system</p>
     </div>
-
-    <script>
-      // Gera um número aleatório entre 2 e 20
-      var randomNumber = Math.floor(Math.random() * 6) + 0;
-      var imagePath = "SatanicPCB_InUse" + randomNumber + ".jpg";
-      document.getElementById("randomImage").src = imagePath;
-    </script>
-
-
-<div id="mySidenav" class="sidenav">
-  <a href="https://esh64.github.io/index.html">Home Page</a>
-  <a href="https://esh64.github.io/aboutme.html">About Me</a>
-  <a href="https://esh64.github.io/formaleducation.html">Formal Education</a>
-  <a href="https://esh64.github.io/professionalexperience.html">Professional Experience</a>
-  <a href="https://esh64.github.io/scientificproduction.html">Scientific Productions</a>
-  <a href="https://esh64.github.io/mycollection.html">My Collection</a>
 </div>
-   
-    </body>
+
+<script>
+    var randomNumber = Math.floor(Math.random() * 6) + 0;
+    var imagePath = "SatanicPCB_InUse" + randomNumber + ".jpg";
+    document.getElementById("randomImage").src = imagePath;
+</script>
+
+</body>
 </html>
+
