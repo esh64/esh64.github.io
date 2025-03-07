@@ -2,97 +2,123 @@
 <html>
 
 <style>
+/* Estilos gerais */
 body {
-  background-color: #e5e5e5;
+    background-color: #e5e5e5;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
 }
 
+/* Conteúdo principal */
+.main {
+    margin-left: 180px;
+    padding: 20px;
+    max-width: 80%;
+}
+
+/* Títulos */
 h1 {
-  font-family: "Times New Roman", Times, serif;
-  color: #0d0c0c;
-  text-align: center;
+    color: #0d0c0c;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .h1_2 {
-  font-family: "Times New Roman", Times, serif;
-  color: #e5e5e5;
+    color: #e5e5e5;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 h2 {
-  font-family: "Times New Roman", Times, serif;
-  color: #0d0c0c;
+    color: #0d0c0c;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Texto e links */
+p, li {
+    color: #0d0c0c;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
 }
 
 a {
-  font-family: "Times New Roman", Times, serif;
-  color: #dd2020;
+    color: #dd2020;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-p {
-  font-family: "Times New Roman", Times, serif;
-  color: #0d0c0c;
-  font-size: 16px;
-  text-align: center;
+a:hover {
+    color: #a50000;
+    text-decoration: underline;
 }
 
-li {
-  font-family: "Times New Roman", Times, serif;
-  color: #0d0c0c;
-  font-size: 16px;
+/* Linha divisória */
+hr {
+    border: 1px solid #ccc;
+    margin: 30px 0;
 }
 
+/* Barra lateral */
 .sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #a5a2a2;
-  overflow-x: hidden;
-  padding-top: 20px;
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #a5a2a2;
+    padding-top: 20px;
+    overflow-x: hidden;
 }
 
 .sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #dd2020;
-  display: block;
+    display: block;
+    padding: 10px 16px;
+    font-size: 18px;
+    color: #dd2020;
 }
 
 .sidenav a:hover {
-  color: #ffffff;
-}
-
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-.image-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Espaço entre as imagens */
-  justify-content: center; /* Centraliza as imagens */
-  padding: 20px;
-}
-
-.image-container img {
-  max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho do container */
-  height: auto;
-  max-width: 350px; /* Limita o tamanho das imagens */
-  border-radius: 10px; /* Bordas arredondadas */
+    color: #ffffff;
+    background-color: #8a8989;
 }
 
 #sidenav-image {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
+
+/* Responsividade */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* Container de imagens */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-container img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
 
 </style>
 
