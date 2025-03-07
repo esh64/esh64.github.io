@@ -118,6 +118,16 @@
             background-color: #a50000;
         }
 
+        /* Seções */
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        
     </style>
     
 <head>
@@ -137,6 +147,7 @@
 </div>
 
 <div class="main">
+    <section>
     <h1>Hello, friend.</h1>
     <p>My name is Eduardo Sperle Honorato. I am an Electronics and Computer Engineer, a Master in Computer Science, and currently pursuing a Ph.D. in the same field. My doctoral research focuses on developing a general-purpose DataFlow-based computer architecture. My academic journey aligns with my lifelong passion for computers and video games, which I have nurtured since childhood.</p>
 
@@ -167,14 +178,15 @@
         <img id="randomImage" alt="Doomed Electronics">
         <p class="image-caption">The electronic satanic system</p>
     </div>
+ </section>
 </div>
+
+</body>
+
+</html>
 
 <script>
     var randomNumber = Math.floor(Math.random() * 11) + 0;
     var imagePath = "SatanicPCB_InUse" + randomNumber + ".jpg";
     document.getElementById("randomImage").src = imagePath;
 </script>
-
-</body>
-</html>
-
