@@ -1,98 +1,92 @@
 <!DOCTYPE html>
 <html>
+<style>
+/* Estilos gerais */
+body {
+  background-color: #e5e5e5;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+  font-size: 22px;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  color: #0d0c0c;
+  font-size: 16px;
+}
+
+/* Ajuste para as listas */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #a5a2a2;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #dd2020;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+.main {
+  margin-left: 180px;
+  padding: 20px;
+  max-width: 80%;
+}
+
+/* Estilização unificada para todas as seções */
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Linha divisória */
+hr {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+</style>
 
 <head>
-    <style>
-        /* Estilos gerais */
-        body {
-            background-color: #e5e5e5;
-            font-family: "Times New Roman", Times, serif;
-            color: #0d0c0c;
-        }
-
-        h1 {
-            font-size: 24px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            font-size: 20px;
-            margin-top: 30px;
-            border-bottom: 2px solid #dd2020;
-            padding-bottom: 5px;
-        }
-
-        a {
-            color: #dd2020;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        p {
-            font-size: 16px;
-        }
-
-        li {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        /* Barra lateral */
-        .sidenav {
-            height: 100%;
-            width: 160px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: #a5a2a2;
-            padding-top: 20px;
-        }
-
-        .sidenav a {
-            padding: 6px 8px;
-            font-size: 18px;
-            display: block;
-            color: #dd2020;
-        }
-
-        .sidenav a:hover {
-            color: #ffffff;
-        }
-
-        /* Conteúdo principal */
-        .main {
-            margin-left: 180px;
-            padding: 20px;
-            max-width: 80%;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Seções */
-        section {
-            margin-bottom: 40px;
-            padding: 20px;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        /* Imagem da barra lateral */
-        #sidenav-image {
-            max-width: 100%;
-            margin-top: 20px;
-        }
-    </style>
+  <title id="title">Scientific Production</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -121,6 +115,8 @@
             </ul>
         </section>
 
+        <hr>
+        
         <!-- Conferences Articles -->
         <section>
             <h1>Conference Articles</h1>
@@ -176,6 +172,8 @@
             </ul>
         </section>
 
+        <hr>
+        
         <!-- Others Publications -->
         <section>
             <h1>Others Publications</h1>
