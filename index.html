@@ -146,12 +146,19 @@ img {
     <a href="https://www.instagram.com/esh_64_/">Instagram</a>
     
     </div>
-
+  
     <div class="image-container">
-        <img src="SatanicPCB.jpg" alt="Doomed Electronics" style="max-width: 25%; height: auto;">
+        <img id="randomImage" alt="Doomed Electronics" style="max-width: 25%; height: auto;">
         <br>
         <p2>The electronic satanic system</p2>
     </div>
+
+    <script>
+      // Gera um número aleatório entre 2 e 20
+      var randomNumber = Math.floor(Math.random() * 19) + 2;
+      var imagePath = "SatanicPCB" + randomNumber + ".jpg";
+      document.getElementById("randomImage").src = imagePath;
+    </script>
 
 
 <div id="mySidenav" class="sidenav">
