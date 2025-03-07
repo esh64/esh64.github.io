@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 
+<!DOCTYPE html>
+<html>
 <style>
+/* Estilos gerais */
 body {
   background-color: #e5e5e5;
 }
@@ -9,21 +12,15 @@ body {
 h1 {
   font-family: "Times New Roman", Times, serif;
   color: #0d0c0c;
-}
-
-.h1_2 {
-  font-family: "Times New Roman", Times, serif;
-  color: #e5e5e5;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
 h2 {
   font-family: "Times New Roman", Times, serif;
   color: #0d0c0c;
-}
-
-a {
-  font-family: "Times New Roman", Times, serif;
-  color: #dd2020;
+  font-size: 22px;
 }
 
 p {
@@ -32,21 +29,17 @@ p {
   font-size: 16px;
 }
 
-li {
-  font-family: "Times New Roman", Times, serif;
-  color: #0d0c0c;
-  font-size: 16px;
+/* Ajuste para as listas */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
-  /* Seções */
-section {
-  margin-bottom: 40px;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+ul ul {
+  list-style-type: circle;
+  padding-left: 20px;
 }
-  
+
 .sidenav {
   height: 100%;
   width: 160px;
@@ -72,49 +65,27 @@ section {
 }
 
 .main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  padding: 0px 10px;
+  margin-left: 180px;
+  padding: 20px;
+  max-width: 80%;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+/* Estilização unificada para todas as seções */
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.image-cropper {
-  width: 250px;
-  height: 250px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
+/* Linha divisória */
+hr {
+  border: 1px solid #ccc;
+  margin: 20px 0;
 }
 
-.image-cropper2 {
-  width: 125px;
-  height: 125px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-img {
-  display: inline;
-  margin: 8px -8px;
-  height: 115%;
-  width: auto;
-}
-
-.img2 {
-  display: inline;
-  margin: 0px -45px;
-  height: 100%;
-  width: auto;
-}
-
-#sidenav-image {
-  max-width: 100%;
-}
-
+</style>
 </style>
 
 <head>
@@ -136,6 +107,8 @@ img {
     </ul>
     </section>
 
+   <hr>
+  
     <section id="UFRJ">
     <h1>Federal University of Rio de Janeiro (UFRJ), Brazil</h1>
     <ul>
@@ -160,6 +133,8 @@ img {
     </ul>
     </section>
 
+    <hr>
+      
     <section id="CEFET">
     <h1>Federal Center for Technological Education of Rio de Janeiro (CEFET/RJ), Brazil</h1>
     <ul>
