@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 
+<!DOCTYPE html>
+<html>
+
 <style>
+/* Estilos gerais */
 body {
   background-color: #e5e5e5;
 }
@@ -9,31 +13,32 @@ body {
 h1 {
   font-family: "Times New Roman", Times, serif;
   color: #0d0c0c;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
 h2 {
   font-family: "Times New Roman", Times, serif;
   color: #0d0c0c;
+  font-size: 22px;
 }
 
-a {
-  font-family: "Times New Roman", Times, serif;
-  color: #dd2020;
-}
-
-p, li {
+p {
   font-family: "Times New Roman", Times, serif;
   color: #0d0c0c;
   font-size: 16px;
 }
 
-/* Seções */
-section {
-  margin-bottom: 40px;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+/* Ajuste para as listas */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul ul {
+  list-style-type: circle;
+  padding-left: 20px;
 }
 
 .sidenav {
@@ -61,18 +66,26 @@ section {
 }
 
 .main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  padding: 0px 10px;
+  margin-left: 180px;
+  padding: 20px;
+  max-width: 80%;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+/* Estilização unificada para todas as seções */
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-#sidenav-image {
-  max-width: 100%;
+/* Linha divisória */
+hr {
+  border: 1px solid #ccc;
+  margin: 20px 0;
 }
+
 </style>
 
 <head>
@@ -87,11 +100,15 @@ section {
     <section id="postgraduate">
         <h1>Postgraduate</h1>
 
-        <h2>2023-2029 Ph.D. in Computer Science (in progress)</h2>
+        <h2>2025-2029 Ph.D. in Computer Science (in progress)</h2>
         <ul>
             <li>University of São Paulo (USP), Brazil</li>
             <li>Advisor: Vanderlei Bonato</li>
             <li>Funding: Coordination for the Improvement of Higher Education Personnel (CAPES), Brazil</li>
+            <li>Research Areas:
+                <ul>
+                    <li>Computer Architecture</li>
+                </ul>
         </ul>
 
         <h2>2023-2025 Master's in Computer Science</h2>
@@ -110,6 +127,8 @@ section {
         </ul>
     </section>
 
+    <hr>
+  
     <section id="undergraduate">
         <h1>Undergraduate</h1>
 
@@ -139,6 +158,8 @@ section {
         </ul>
     </section>
 
+<hr>
+  
 <section id="highschool">
     <h1>Secondary Education</h1>
 
