@@ -77,17 +77,16 @@
         .image-container {
             position: relative;
             display: inline-block;
+            text-align: center;
         }
         .image-container img {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
+            visibility: hidden;
             width: 200px;
+            height: auto;
             border: 1px solid #000;
         }
         .image-caption:hover + img {
-            display: block;
+            visibility: visible;
         }
 
         /* External links section */
