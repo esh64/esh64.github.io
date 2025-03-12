@@ -75,26 +75,19 @@
         }
 
         .image-container {
-            display: flex;
-            justify-content: center; /* Centraliza horizontalmente */
-            align-items: center; /* Centraliza verticalmente (se necessário) */
-            flex-direction: column; /* Mantém a legenda abaixo da imagem */
-            margin-top: 20px;
+            position: relative;
+            display: inline-block;
         }
-        
         .image-container img {
-            max-width: 360px; /* Mantém a imagem maior */
-            height: auto;
-            border-radius: 10px;
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            border: 1px solid #000;
         }
-
-        .image-caption {
-            font-family: "Gothic", sans-serif;
-            font-style: italic;
-            color: #dd2020;
-            text-align: center;
-            margin-top: 10px;
-            font-size: 16px;
+        .image-caption:hover + img {
+            display: block;
         }
 
         /* External links section */
@@ -176,8 +169,8 @@
     <hr>
 
     <div class="image-container">
-        <img id="randomImage" alt="Doomed Electronics">
         <p class="image-caption">The electronic satanic system</p>
+        <img id="randomImage" src="your-image.jpg" alt="Doomed Electronics">
     </div>
  </section>
 </div>
